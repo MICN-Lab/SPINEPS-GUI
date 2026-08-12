@@ -1,4 +1,11 @@
 # SpinePS GUI
+## Download
+
+## Download the packaged Windows `.zip` from ownCloud: <https://owncloud.damutten.ch/s/hWm6MsNE1yTVPkv>
+
+Keep the extracted folder together. The executable depends on bundled files in `_internal`.
+
+
 
 Desktop GUI for whole-spine segmentation with [SPINEPS](https://spineps.readthedocs.io/).
 
@@ -30,13 +37,6 @@ The GUI wraps that workflow for Windows workstations and research machines. It h
 - 3D surface visualization and STL-oriented workflow support
 - cached output reuse for repeated review
 
-## Download
-
-## Download the packaged Windows `.zip` from ownCloud:
-
-## <https://owncloud.damutten.ch/s/hWm6MsNE1yTVPkv>
-
-Keep the extracted folder together. The executable depends on bundled files in `_internal`.
 
 
 ## Basic Workflow

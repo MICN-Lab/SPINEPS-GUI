@@ -81,31 +81,11 @@ SPINEPS derivatives may include:
 
 This GUI grew out of an earlier spine subregion desktop app built around a task-local nnU-Net model. The current SpinePS GUI keeps the same desktop interaction model and viewer ideas, but the inference backend now calls SpinePS directly through `process_img_nii`, with SpinePS model loaders for semantic, instance, and labeling models.
 
-
-## License
-
-This GUI is distributed for academic non-commercial use. See [LICENSE.txt](LICENSE.txt).
-
-SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller.
-
-## Citation
-
-If you use this GUI or the thoracolumbar CT subregion workflow, please cite:
-
-```bibtex
-@article{damutten_thoracolumbar_2026,
-  title   = {Fully Automated Segmentation of Anatomical Subregions of the Thoracolumbar Spine on Computed Tomography},
-  doi     = {10.1007/s10278-026-02169-7},
-  journal = {Journal of Imaging Informatics in Medicine},
-  author  = {Da Mutten, Raffaele and Theiler, Sven and Bottini, Massimo and de Wilde, Daniel and Zanier, Olivier and Maldaner, Nicolai and Voglis, Stefanos and El-Hajj, Victor Gabriel and Elmi-Terander, Adrian and van Doormaal, Tristan P. C. and Germans, Menno R. and Bellut, David and Regli, Luca and Serra, Carlo and Staartjes, Victor E.},
-  date    = {2026-08-10}
-}
-```
 ## License
 
 This GUI is distributed for academic non-commercial use. See [LICENSE.md](LICENSE.md).
 
-SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller.
+SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller. https://github.com/MICN-Lab/SPINEPS-GUI/edit/master/README.md
 
 ## Citation
 

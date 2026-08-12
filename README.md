@@ -5,7 +5,7 @@
 
 Keep the extracted folder together. The executable depends on bundled files in `_internal`.
 
-
+## In Short
 
 Desktop GUI for whole-spine segmentation with [SPINEPS](https://spineps.readthedocs.io/).
 

@@ -81,16 +81,12 @@ SPINEPS derivatives may include:
 
 This GUI grew out of an earlier spine subregion desktop app built around a task-local nnU-Net model. The current SpinePS GUI keeps the same desktop interaction model and viewer ideas, but the inference backend now calls SpinePS directly through `process_img_nii`, with SpinePS model loaders for semantic, instance, and labeling models.
 
-## Upstream SpinePS
-
-SPINEPS is an upstream framework for out-of-the-box whole-spine segmentation. Its documentation describes the semantic phase, instance phase, optional VERIDAH labeling, and standard derivatives outputs:
-
-- Documentation: <https://spineps.readthedocs.io/>
-- PyPI: <https://pypi.org/project/SPINEPS/>
 
 ## License
 
 This GUI is distributed for academic non-commercial use. See [LICENSE.txt](LICENSE.txt).
+
+SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller.
 
 ## Citation
 

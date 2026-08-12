@@ -132,12 +132,4 @@ If you use the SpinePS backend, cite the upstream SpinePS work:
   date    = {2024-10-29}
 }
 ```
-```bibtex
-@article{moller_spinepsautomatic_2024,
-  title   = {{SPINEPS}--automatic whole spine segmentation of T2-weighted {MR} images using a two-phase approach to multi-class semantic and instance segmentation},
-  doi     = {10.1007/s00330-024-11155-y},
-  journal = {European Radiology},
-  author  = {Moller, Hendrik and Graf, Robert and Schmitt, Joachim and Keinert, Benjamin and Schon, Hanna and Atad, Matan and Sekuboyina, Anjany and Streckenbach, Felix and Kofler, Florian and Kroencke, Thomas and Bette, Stefanie and Willich, Stefan N. and Keil, Thomas and Niendorf, Thoralf and Pischon, Tobias and Endemann, Beate and Menze, Bjoern and Rueckert, Daniel and Kirschke, Jan S.},
-  date    = {2024-10-29}
-}
-```
+

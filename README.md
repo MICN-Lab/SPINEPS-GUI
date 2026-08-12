@@ -92,10 +92,46 @@ SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller
 
 If you use this GUI or the thoracolumbar CT subregion workflow, please cite:
 
-- Fully automated segmentation of anatomical subregions of the thoracolumbar spine in computed tomography. Springer Medicine. <https://www.springermedicine.com/computed-tomography/computed-tomography/fully-automated-segmentation-of-anatomical-subregions-of-the-tho/53098878>
+```bibtex
+@article{damutten_thoracolumbar_2026,
+  title   = {Fully Automated Segmentation of Anatomical Subregions of the Thoracolumbar Spine on Computed Tomography},
+  doi     = {10.1007/s10278-026-02169-7},
+  journal = {Journal of Imaging Informatics in Medicine},
+  author  = {Da Mutten, Raffaele and Theiler, Sven and Bottini, Massimo and de Wilde, Daniel and Zanier, Olivier and Maldaner, Nicolai and Voglis, Stefanos and El-Hajj, Victor Gabriel and Elmi-Terander, Adrian and van Doormaal, Tristan P. C. and Germans, Menno R. and Bellut, David and Regli, Luca and Serra, Carlo and Staartjes, Victor E.},
+  date    = {2026-08-10}
+}
+```
+## License
+
+This GUI is distributed for academic non-commercial use. See [LICENSE.md](LICENSE.md).
+
+SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller.
+
+## Citation
+
+If you use this GUI or the thoracolumbar CT subregion workflow, please cite:
+
+```bibtex
+@article{damutten_thoracolumbar_2026,
+  title   = {Fully Automated Segmentation of Anatomical Subregions of the Thoracolumbar Spine on Computed Tomography},
+  doi     = {10.1007/s10278-026-02169-7},
+  journal = {Journal of Imaging Informatics in Medicine},
+  author  = {Da Mutten, Raffaele and Theiler, Sven and Bottini, Massimo and de Wilde, Daniel and Zanier, Olivier and Maldaner, Nicolai and Voglis, Stefanos and El-Hajj, Victor Gabriel and Elmi-Terander, Adrian and van Doormaal, Tristan P. C. and Germans, Menno R. and Bellut, David and Regli, Luca and Serra, Carlo and Staartjes, Victor E.},
+  date    = {2026-08-10}
+}
+```
 
 If you use the SpinePS backend, cite the upstream SpinePS work:
 
+```bibtex
+@article{moller_spinepsautomatic_2024,
+  title   = {{SPINEPS}--automatic whole spine segmentation of T2-weighted {MR} images using a two-phase approach to multi-class semantic and instance segmentation},
+  doi     = {10.1007/s00330-024-11155-y},
+  journal = {European Radiology},
+  author  = {Moller, Hendrik and Graf, Robert and Schmitt, Joachim and Keinert, Benjamin and Schon, Hanna and Atad, Matan and Sekuboyina, Anjany and Streckenbach, Felix and Kofler, Florian and Kroencke, Thomas and Bette, Stefanie and Willich, Stefan N. and Keil, Thomas and Niendorf, Thoralf and Pischon, Tobias and Endemann, Beate and Menze, Bjoern and Rueckert, Daniel and Kirschke, Jan S.},
+  date    = {2024-10-29}
+}
+```
 ```bibtex
 @article{moller_spinepsautomatic_2024,
   title   = {{SPINEPS}--automatic whole spine segmentation of T2-weighted {MR} images using a two-phase approach to multi-class semantic and instance segmentation},

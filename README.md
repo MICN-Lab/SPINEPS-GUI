@@ -11,7 +11,7 @@ Desktop GUI for whole-spine segmentation with [SPINEPS](https://SPINEPS.readthed
 
 This project packages the SPINEPS workflow into a hospital-friendly desktop application: select DICOM or NIfTI input, run segmentation locally, watch progress and system resources, then inspect the scan with an overlay and optional 3D surface view.
 
-![SPINEPS GUI showing CT spine segmentation overlays and 3D reconstruction](assets/SPINEPS-verse.png)
+![SPINEPS GUI showing CT spine segmentation overlays and 3D reconstruction](assets/spineps-verse.png)
 
 ## What It Does
 

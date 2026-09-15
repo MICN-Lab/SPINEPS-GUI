@@ -1,17 +1,17 @@
-# SpinePS GUI
+# Graphical User Interface for the SPINEPS models
 ## Download
 
 ## Download the packaged Windows `.zip` from ownCloud: <https://owncloud.damutten.ch/s/hWm6MsNE1yTVPkv>
 
 Keep the extracted folder together. The executable depends on bundled files in `_internal`.
 
-## In Short
+## About
 
-Desktop GUI for whole-spine segmentation with [SPINEPS](https://spineps.readthedocs.io/).
+Desktop GUI for whole-spine segmentation with [SPINEPS](https://SPINEPS.readthedocs.io/).
 
-This project packages the SpinePS workflow into a hospital-friendly desktop application: select DICOM or NIfTI input, run segmentation locally, watch progress and system resources, then inspect the scan with an overlay and optional 3D surface view.
+This project packages the SPINEPS workflow into a hospital-friendly desktop application: select DICOM or NIfTI input, run segmentation locally, watch progress and system resources, then inspect the scan with an overlay and optional 3D surface view.
 
-![SpinePS GUI showing CT spine segmentation overlays and 3D reconstruction](assets/spineps-verse.png)
+![SPINEPS GUI showing CT spine segmentation overlays and 3D reconstruction](assets/SPINEPS-verse.png)
 
 ## What It Does
 
@@ -29,7 +29,7 @@ The GUI wraps that workflow for Windows workstations and research machines. It h
 - DICOM folder input with automatic DICOM-to-NIfTI conversion
 - NIfTI input support (`.nii`, `.nii.gz`)
 - robust DICOM series discovery that skips localizers, topograms, protocol images, and non-volume series
-- local SpinePS inference using CT models by default
+- local SPINEPS inference using CT models by default
 - optional CPU mode through environment variable
 - progress log with stage-aware status updates
 - CPU, RAM, GPU, and process memory monitor strip
@@ -57,7 +57,7 @@ Typical output folders include:
 output/
   nifti_tmp/          converted or copied scan volumes
   segmentation/       GUI-ready segmentation overlays
-  derivatives_seg/    native SpinePS derivatives
+  derivatives_seg/    native SPINEPS derivatives
 ```
 
 SPINEPS derivatives may include:
@@ -66,7 +66,7 @@ SPINEPS derivatives may include:
 - `seg-vert` vertebra instance mask
 - centroid JSON
 - snapshot PNG
-- raw/model-space outputs depending on SpinePS configuration
+- raw/model-space outputs depending on SPINEPS configuration
 
 
 ## Notes And Limitations
@@ -77,9 +77,6 @@ SPINEPS derivatives may include:
 - GPU inference depends on the installed PyTorch/CUDA runtime in the source environment or the bundled runtime in the packaged app.
 - Medical images, generated outputs, model weights, and large vendor/runtime bundles should not be committed to git.
 
-## Relationship To The Spine Subregion GUI
-
-This GUI grew out of an earlier spine subregion desktop app built around a task-local nnU-Net model. The current SpinePS GUI keeps the same desktop interaction model and viewer ideas, but the inference backend now calls SpinePS directly through `process_img_nii`, with SpinePS model loaders for semantic, instance, and labeling models.
 
 ## License
 
@@ -101,10 +98,10 @@ If you use this GUI or the thoracolumbar CT subregion workflow, please cite:
 }
 ```
 
-If you use the SpinePS backend, cite the upstream SpinePS work:
+If you use the SPINEPS backend, cite the upstream SPINEPS work:
 
 ```bibtex
-@article{moller_spinepsautomatic_2024,
+@article{moller_SPINEPSautomatic_2024,
   title   = {{SPINEPS}--automatic whole spine segmentation of T2-weighted {MR} images using a two-phase approach to multi-class semantic and instance segmentation},
   doi     = {10.1007/s00330-024-11155-y},
   journal = {European Radiology},

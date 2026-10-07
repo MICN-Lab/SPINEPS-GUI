@@ -27,3 +27,5 @@ Use a new output folder to exercise inference rather than cached results.
 Standalone validation on 2026-10-07: GUI startup smoke passed; a real lumbar CT NIfTI input completed all three SPINEPS model stages in 88 seconds. Output shape and affine match the toolkit result. The 18 native SPINEPS foreground labels have minimum Dice 0.9998907193; voxel-level differences are consistent with repeated GPU execution. The environment reports no broken requirements (`pip check`).
 
 The source viewer now selects colors and names from native SPINEPS label IDs (including 41–53, sacral structures, and 100 for discs), rather than displaying only the legacy 1–7 subregion labels. Legacy masks retain their original names and colors.
+
+Legends display native label IDs, names, matching 2D/3D colors, and absent labels. Four label/legend tests pass, including palette changes and clearing a loaded mask.

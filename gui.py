@@ -7,6 +7,7 @@ import time
 from pathlib import Path
 import numpy as np
 from spine_labels import label_map_for_values
+from mask_legend import MaskLegend
 
 # PyQt wheels may not ship Qt font directories in some envs; on Windows use
 # system fonts to avoid repetitive QFontDatabase warnings.
@@ -1459,6 +1460,8 @@ class MainWindow(QMainWindow):
         self.seg_series_combo.setEnabled(False)
         self.seg_series_combo.currentIndexChanged.connect(self._on_series_selection_changed)
         side_layout.addWidget(self.seg_series_combo)
+        self.mask_legend = MaskLegend()
+        side_layout.addWidget(self.mask_legend)
 
         cmd_sep = QFrame()
         cmd_sep.setFrameShape(QFrame.HLine)
@@ -1831,6 +1834,7 @@ class MainWindow(QMainWindow):
         self._rss_label.setText(txt)
 
     def _free_ct_data(self):
+        self.mask_legend.set_mask(None, {})
         import gc
         for viewer in (self.viewer_axial, self.viewer_coronal, self.viewer_sagittal):
             viewer._ct = None
@@ -2141,6 +2145,7 @@ class MainWindow(QMainWindow):
             LABEL_MAP = label_map_for_values(values, LEGACY_LABEL_MAP)
         else:
             LABEL_MAP = dict(LEGACY_LABEL_MAP)
+        self.mask_legend.set_mask(seg_path, LABEL_MAP)
 
     def load_overlay_visualization(self):
         ct_path, seg_path = self._selected_visualization_files()

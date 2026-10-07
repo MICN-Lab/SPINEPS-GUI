@@ -1,0 +1,14 @@
+# spine env (Spine / SPINEPS GUI). Python 3.10. Linux only; Windows runs Spine in "gui".
+# SPINEPS 2.x pins nnunetv2>=2.8 and scikit-image<0.23 (via TPTBox), which conflict with "gui".
+# torch installed separately from the cu128 index and held by constraints-spine.txt.
+PyQt5==5.15.11
+matplotlib==3.10.9
+psutil==7.2.2
+requests==2.33.1
+nibabel==5.4.2
+pydicom==3.0.2
+dicom2nifti==2.6.2
+python-gdcm==3.2.2
+SimpleITK==2.5.3
+vtk==9.6.1
+spineps==2.1.2

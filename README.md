@@ -39,6 +39,27 @@ The GUI wraps that workflow for Windows workstations and research machines. It h
 
 
 
+## Run from source on Linux
+
+The source GUI, pipeline, and platform helpers are included in this repository. Use a separate `spine` environment because SPINEPS 2.1.2 requires a different nnU-Net version from the older toolkit models.
+
+```bash
+conda env create -f environment.yml
+conda activate spine
+python -m pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -c constraints.txt -r requirements.txt
+python -m pip check
+bash run_linux.sh
+```
+
+CUDA 12.8 wheels were tested on Blackwell. For a CPU-only machine, install the matching CPU PyTorch wheels and set `SPINEPS_GUI_CPU=1`. Model weights download through SPINEPS on first use; they are not included in this repository.
+
+For a conda installation outside `~/miniconda3`, set `SPINE_PYTHON=/absolute/path/to/spine/bin/python` when launching. The launcher adds the environment's `bin` folder to `PATH`, including its native `dcm2niix`.
+
+On Windows, the source GUI expects the environment name `gui`; create it with `conda env create -n gui -f environment.yml`, install the dependencies in that environment, then run `python gui.py`. The packaged Windows download above remains available. The source changes in this pull request were tested on Linux; no fresh Windows validation was performed.
+
+See [VALIDATION.md](VALIDATION.md) for startup and real-input integration checks. Generated scans, segmentation masks, derivatives, and model weights are excluded by `.gitignore`.
+
 ## Basic Workflow
 
 1. Choose `DICOM Folder` or `NIfTI File`.
@@ -80,9 +101,9 @@ SPINEPS derivatives may include:
 
 ## License
 
-This GUI is distributed for academic non-commercial use. See [LICENSE.md](LICENSE.md).
+This GUI is distributed for academic non-commercial use. See [LICENSE.txt](LICENSE.txt).
 
-SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller. https://github.com/MICN-Lab/SPINEPS-GUI/edit/master/README.md
+SPINEPS is released under the Apache License 2.0. Copyright 2023 Hendrik Möller. See the [upstream SPINEPS repository](https://github.com/Hendrik-code/spineps).
 
 ## Citation
 
